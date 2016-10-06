@@ -58,5 +58,15 @@ app.initialize();
 
 function searchForBControl()
 {
-	alert("chrome");
+    console.log("A1");
+    alert("start");
+    alert("continue");
+    //var socket = chrome.sockets.udp;
+    console.log(chrome.sockets);
+    chrome.sockets.udp.create(null, function() {
+        
+
+    });
+    
+    alert("end");
 }

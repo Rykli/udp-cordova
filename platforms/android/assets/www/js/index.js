@@ -21,6 +21,7 @@ var app = {
     initialize: function() {
         this.bindEvents();
     },
+    
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
@@ -28,9 +29,10 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         //document.getElementById('button1').addEventListener('click',searchForBControl);
-        document.addEventListener('DOMContentReady', function () {
-            document.getElementById('button1').addEventListener('click', searchForBControl)});
+        /*document.addEventListener('DOMContentReady', function () {
+            document.getElementById('button1').addEventListener('click', searchForBControl)});*/
     },
+    
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
@@ -39,6 +41,7 @@ var app = {
         console.log('Ready');
         app.receivedEvent('deviceready');
     },
+    
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
@@ -56,17 +59,25 @@ var app = {
 
 app.initialize();
 
-function searchForBControl()
+/*var myFunc = function()
 {
-    console.log("A1");
-    alert("start");
-    alert("continue");
-    //var socket = chrome.sockets.udp;
-    console.log(chrome.sockets);
-    chrome.sockets.udp.create(null, function() {
-        
-
-    });
-    
-    alert("end");
+    //cb
 }
+
+foo.create({},function(result){
+    //success
+},function(error){
+    
+});*/
+
+/*var m = function(a,b,c,d)
+{
+    a();
+}
+
+
+m(function(){
+    setTimeout(function(){
+        console.log('Im called');
+
+    })*/

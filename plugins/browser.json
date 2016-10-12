@@ -7,10 +7,13 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.example.upd"
+        },
         "cordova-plugin-chrome-apps-sockets-udp": {
             "PACKAGE_NAME": "com.example.upd"
         },
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-chrome-apps-sockets-tcp": {
             "PACKAGE_NAME": "com.example.upd"
         }
     },

@@ -7,6 +7,9 @@
     <feature name="ChromeSocketsUdp">
         <param name="android-package" value="org.chromium.ChromeSocketsUdp" />
     </feature>
+    <feature name="ChromeSocketsTcp">
+        <param name="android-package" value="org.chromium.ChromeSocketsTcp" />
+    </feature>
     <name>UDPScanner</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

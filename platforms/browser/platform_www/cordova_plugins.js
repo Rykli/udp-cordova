@@ -30,14 +30,23 @@ module.exports = [
         "clobbers": [
             "chrome.sockets.udp"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-chrome-apps-sockets-tcp/sockets.tcp.js",
+        "id": "cordova-plugin-chrome-apps-sockets-tcp.sockets.tcp",
+        "pluginId": "cordova-plugin-chrome-apps-sockets-tcp",
+        "clobbers": [
+            "chrome.sockets.tcp"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-chrome-apps-common": "1.0.7",
-    "cordova-plugin-chrome-apps-sockets-udp": "1.2.3-dev",
-    "cordova-plugin-whitelist": "1.3.0"
+    "cordova-plugin-whitelist": "1.3.0",
+    "cordova-plugin-chrome-apps-sockets-udp": "1.3.0",
+    "cordova-plugin-chrome-apps-sockets-tcp": "1.3.7-dev"
 }
 // BOTTOM OF METADATA
 });
